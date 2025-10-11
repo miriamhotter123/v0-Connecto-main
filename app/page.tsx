@@ -99,19 +99,13 @@ export default function IcebreakerApp() {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6 relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 -translate-x-8 translate-y-6 z-10">
+      <div
+        className={`absolute bottom-0 left-0 -translate-x-16 translate-y-12 z-10 ${conversationStarted ? "hidden md:block" : "block"}`}
+      >
         <img
           src="/robot-logo.png"
           alt="Connecto Robot"
-          className="
-            w-32 h-32
-            sm:w-48 sm:h-48
-            md:w-60 md:h-60
-            lg:w-80 lg:h-80
-            opacity-90 hover:opacity-100
-            transition-all duration-300
-            transform rotate-12 hover:rotate-6
-          "
+          className="w-50 h-50 md:w-80 md:h-80 opacity-90 hover:opacity-100 transition-all duration-300 transform rotate-12 hover:rotate-6"
           style={{
             mixBlendMode: "multiply",
             filter: "drop-shadow(0 0 0 transparent)",
@@ -124,7 +118,7 @@ export default function IcebreakerApp() {
         <div className="text-center space-y-2 pt-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Heart className="h-8 w-8 text-primary" />
-            <h1 className="text-3xl font-bold text-foreground text-balance">Connecto </h1>
+            <h1 className="text-3xl font-bold text-foreground text-balance">Connecto</h1>
           </div>
           <p className="text-muted-foreground text-pretty">Fostering meaningful conversations</p>
         </div>
