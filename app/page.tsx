@@ -100,7 +100,7 @@ export default function IcebreakerApp() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6 relative overflow-hidden">
       <div
-        className={`absolute bottom-0 left-0 -translate-x-16 translate-y-12 z-10 ${conversationStarted ? "hidden md:block" : "block"}`}
+        className={`absolute bottom-0 left-0 -translate-x-6 translate-y-8 z-10 ${conversationStarted ? "hidden md:block" : "block"}`}
       >
         <img
           src="/robot-logo.png"
