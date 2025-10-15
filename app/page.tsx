@@ -34,7 +34,7 @@ const listeningTips = [
 
 const conversationScenarios = [
   {
-    situation: "Tension rises",
+    situation: "Hello",
     tips: [
       "Pause and ask a clarifying question: ‘Can you explain why you think that?’",
       "Redirect to personal experiences rather than general arguments",
